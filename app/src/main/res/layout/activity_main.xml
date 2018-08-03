@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="me.morasquad.mlkittest.MainActivity">
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="277dp"
+        app:srcCompat="@drawable/common_full_open_on_phone"/>
+
+    <TextView
+        android:id="@+id/imageText"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="10dp"
+        android:layout_marginTop="25dp"
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/snapBtn"
+            android:layout_width="109dp"
+            android:layout_weight="2"
+            android:layout_height="46dp"
+            android:text="Snap"/>
+
+        <Button
+            android:id="@+id/detectBtn"
+            android:layout_width="108dp"
+            android:layout_height="48dp"
+            android:layout_weight="2"
+            android:text="Detect" />
+    </LinearLayout>
+
+</LinearLayout>
